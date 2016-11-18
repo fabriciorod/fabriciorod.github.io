@@ -280,16 +280,33 @@ section.project .pages .page .media .device-frame.device-nexus5 {
 section.project .pages .page .media .device-frame.device-nexus5_light {
     background: url(../images/frame_nexus5_light.svg) no-repeat 0 0
 }
+section.project .pages .page .media .device-frame.device-iphone6 {
+    background: url(../images/frame_iphone6.svg) no-repeat 0 0
+}
+section.project .pages .page .media .device-frame.device-iphone6_light {
+    background: url(../images/frame_iphone6_light.svg) no-repeat 0 0
+}
 
 section.project .pages .page .media .device-frame.device-nexus5,
 section.project .pages .page .media .device-frame.device-nexus5_light {
     padding: 70px 18px 94px
+}
+section.project .pages .page .media .device-frame.device-iphone6,
+section.project .pages .page .media .device-frame.device-iphone6_light {
+    padding: 70px 18px 98px
 }
 
 section.project .pages .page .media .device-frame.device-nexus5 img,
 section.project .pages .page .media .device-frame.device-nexus5 video,
 section.project .pages .page .media .device-frame.device-nexus5_light img,
 section.project .pages .page .media .device-frame.device-nexus5_light video {
+    width: 360px;
+    height: 640px
+}
+section.project .pages .page .media .device-frame.device-iphone6 img,
+section.project .pages .page .media .device-frame.device-iphone6 video,
+section.project .pages .page .media .device-frame.device-iphone6_light img,
+section.project .pages .page .media .device-frame.device-iphone6_light video {
     width: 360px;
     height: 640px
 }
@@ -316,26 +333,26 @@ section.project .pages .page .media .device-frame.device-browser_light video {
 }
 
 section.project .pages .page .media .device-frame.device-chromebook {
-    background: url(../images/frame_chromebook.svg) no-repeat 0 0
+    background: url(../images/frame_nexus10_light.svg) no-repeat 0 0
 }
 
 section.project .pages .page .media .device-frame.device-chromebook_light {
-    background: url(../images/frame_chromebook_light.svg) no-repeat 0 0
+    background: url(../images/frame_nexus10_light.svg) no-repeat 0 0
 }
 
 section.project .pages .page .media .device-frame.device-chromebook,
 section.project .pages .page .media .device-frame.device-chromebook_light {
-    padding: 63px 246px 136px 250px
+    padding: 113px 150px 136px 142px
 }
 
 section.project .pages .page .media .device-frame.device-chromebook img,
 section.project .pages .page .media .device-frame.device-chromebook video,
 section.project .pages .page .media .device-frame.device-chromebook_light img,
 section.project .pages .page .media .device-frame.device-chromebook_light video {
-    width: 1280px;
-    height: 850px;
-    object-position: 0% 0%;
-    object-fit: cover
+    width: auto;
+    height: 800px;
+    /*object-position: 0% 0%;*/
+    /*object-fit: cover*/
 }
 
 section.project .pages .page .media .device-frame.device-wear_round {

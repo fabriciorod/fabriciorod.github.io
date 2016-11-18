@@ -77,44 +77,31 @@
 
 				if (settings.parallax) {
 
-					skel.on('change', function() {
+                    skel.on('change', function () {
 
-						if (skel.breakpoint('medium').active) {
+                        if (skel.breakpoint('medium').active) {
 
-							$window.off('scroll.strata_parallax');
-							$header.css('background-position', 'top left, center center');
+                            $window.off('scroll.strata_parallax');
+                            $header.css('background-position', 'top left, center center');
 
-						}
-						else {
+                        }
+                        else {
 
-							$header.css('background-position', 'left 0px');
+                            $header.css('background-position', 'left 0px');
 
-							$window.on('scroll.strata_parallax', function() {
-								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-							});
+                            $window.on('scroll.strata_parallax', function () {
+                                $header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
+                            });
 
-						}
+                        }
 
-					});
+                    });
 
-					$window.on('load', function() {
-						$window.triggerHandler('scroll');
-					});
+                    $window.on('load', function () {
+                        $window.triggerHandler('scroll');
+                    });
 
-				}
-
-		// Main Sections: Two.
-
-			// Lightbox gallery.
-			// 	$window.on('load', function() {
-            //
-			// 	    $('#two').lightGallery(
-             //            {
-             //                download : false
-            //
-             //            }
-             //        );
-			// 	});
+                }
 
 	});
 
