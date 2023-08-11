@@ -1,0 +1,511 @@
+diff a/index.html b/index.html	(rejected hunks)
+@@ -1,191 +1,318 @@
+-<!DOCTYPE HTML>
+-<html>
+-<head>
+-    <title>Fabricio Rodríguez</title>
+-    <meta charset="utf-8" />
+-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+-    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+-    <link rel="stylesheet" href="assets/css/main.css" />
+-    <link rel="stylesheet" href="assets/css/video.css" />
+-    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,900|Roboto+Mono:400,700">
+-    <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
+-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+-</head>
+-<body id="top">
+-
+-<!--Header -->
+-<header id="header">
+-    <div class="inner">
+-        <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Fabricio Rodriguez" /></a>
+-        <h2><strong>Fabricio Rodríguez</strong><br></h2>
+-        <h3>Android &amp; iOS Developer</h3>
+-    </div>
+-</header>
+-<main id="main">
+-    <section>
+-        <header class="major">
+-            <h2>About Me</h2>
+-        </header>
+-        <p >Hi, i'm Fabricio Rodriguez, a mobile developer currently living in San Ramón, Costa Rica. When i'm not programming possibly i'm drinking a cup of coffee with my family or talking about music with my friends,
+-            reading or learning a new programming language are good options too.<br>
+-            This page is the first step of what is gonna be my first blog. Here, i'll be sharing my experience about the development of iOS & Android apps.
+-        </p>
+-    </section>
+-    <section >
+-        <header class="major">
+-            <h2>
+-                Recent Projects
+-            </h2>
+-        </header>
+-        <p>Projects in which i have loved to participate, yes, because you have to love what you do, if you love what you do, you'll never have to work again.</p>
+-    </section>
+-
+-    <section class="project tall">
+-        <div class=info>
+-            <h2>Yo Viajo</h2>
+-            <p>Yo Viajo is the smart way to travel by bus in Costa Rica. This application aims to help the travelers inside the country, as well as to share their experience with others.
+-                <a href="http://gobiernoabierto.go.cr/">Open government</a> and <a href="http://trustfortheamericas.org/" target="_blank">Trust for the Americas</a> have supported Yo Viajo on their journey to become the Waze for those who travel by bus.
+-                <br>Find more information at <a href="https://yoviajocr.com" target="_blank">yoviajocr.com</a></p>
+-        </div>
+-        <div class=pages>
+-            <div class=page-scroll>
+-                <div class="page video" style="background-color: #FF7043">
+-                    <div class="media loader-parent" style=color:#6774C4>
+-                        <div class="device-frame device-nexus5_light">
+-                            <video loop preload=auto>
+-                                <source src=media/yoviajo.mp4 type=video/mp4>
+-                                <source src=media/yoviajo.webm type=video/webm>
+-                            </video><img class=thumb src=images/thumbs/yoviajo.png></div>
+-                        <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+-                            <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc></circle>
+-                        </svg>
+-                    </div>
+-                </div>
+-            </div>
+-        </div>
+-    </section>
+-    <section class="project tall">
+-        <div class=info>
+-            <h2>Golveca</h2>
+-            <p><a href="https://golveca.com/" target="_blank">Golveca</a> is a company specialized in importations and distributions.
+-                Their catalog of more than 1000 products used to be a folder with printed products images, their sales agents were having troubles to handle the catalog in an efficient way. The solution was to create a tablet optimized application
+-                where the sales agents can show the products in an easier manner, helping the environment by reducing the amount of paper and increasing sales using custom analytics.</p>
+-        </div>
+-        <div class=pages>
+-            <div class=page-scroll>
+-                <div class="page video" style="background-color: #CE93D8">
+-                    <div class="media loader-parent" style=color:#AE57BF>
+-                        <div class="device-frame device-chromebook">
+-                            <video loop preload=none>
+-                                <source src=media/golveca.mp4 type=video/mp4>
+-                                <source src=media/golveca.webm type=video/webm>
+-                            </video>
+-                            <img class=thumb src=images/thumbs/golveca.jpg></div>
+-                        <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+-                            <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc></circle>
+-                        </svg>
+-                    </div>
+-                </div>
+-            </div>
+-        </div>
+-    </section>
+-    <!--<section class="project tall">-->
+-        <!--<div class=info>-->
+-            <!--<h2>Matilandia</h2>-->
+-            <!--<p>Parents of a group of school students decided to give their children a more interactive way to learn,-->
+-                <!--Matilandia is a questions game created for children, the goal is to study after class anywhere, anytime, it is easy to use, and it helps to identify areas in which the kid needs a little push.</p>-->
+-        <!--</div>-->
+-        <!--<div class=pages>-->
+-            <!--<div class=page-scroll>-->
+-                <!--<div class="page video" style="background-color: #B0BEC5">-->
+-                    <!--<div class="media loader-parent" style=color:#49B86F>-->
+-                        <!--<div class="device-frame device-iphone6_light">-->
+-                            <!--<video loop preload=none>-->
+-                                <!--<source src=media/matilandia.mp4 type=video/mp4>-->
+-                                <!--<source src=media/matilandia.webm type=video/webm>-->
+-                            <!--</video><img class=thumb src=images/thumbs/matilandia.jpg></div>-->
+-                        <!--<svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">-->
+-                            <!--<circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc></circle>-->
+-                        <!--</svg>-->
+-                    <!--</div>-->
+-                <!--</div>-->
+-            <!--</div>-->
+-        <!--</div>-->
+-    <!--</section>-->
+-    <section class="project tall">
+-        <div class=info>
+-            <h2>Venturezilla</h2>
+-            <p>Venturezilla aims to be a social network where entrepreneurs can connect with partners around the world.
+-                Upload your pitch, say what you need to take your idea to the next level and start to make connections!
+-            <br>For more information visit <a href="http://venturezilla.com/" target="_blank">venturezilla.com</a> </p>
+-        </div>
+-        <div class=pages>
+-            <div class=page-scroll>
+-                <div class="page video" style="background-color: #A5D6A7">
+-                    <div class="media loader-parent" style=color:#4CCC90>
+-                        <div class="device-frame device-iphone6_light">
+-                            <video loop preload=none>
+-                                <source src=media/venturezilla.mp4 type=video/mp4>
+-                                <source src=media/venturezilla.webm type=video/webm>
+-                            </video><img class=thumb src=images/thumbs/venturezilla.jpg></div>
+-                        <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+-                            <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc></circle>
+-                        </svg>
+-                    </div>
+-                </div>
+-            </div>
+-        </div>
+-    </section>
+-    <section class="project tall">
+-        <div class=info>
+-            <h2>Yo Denuncio</h2>
+-            <p>Currently, in Costa Rica arises the problem of excessive procedures and protocols in the government institutions to handle complaints or warnings of potential risk situations for the most vulnerable populations in the country. <a href="http://yodenuncio.cr" target="_blank">Yo Denuncio</a> is free tool offered to the government where the citizens can make complaints from a single place.</p>
+-        </div>
+-        <div class=pages>
+-            <div class=page-scroll>
+-                <div class="page video" style="background-color: #9FA8DA">
+-                    <div class="media loader-parent" style=color:#5F6CC1>
+-                        <div class="device-frame device-nexus5_light">
+-                            <video loop preload=none>
+-                                <source src=media/yodenuncio.mp4 type=video/mp4>
+-                                <source src=media/yodenuncio.webm type=video/webm>
+-                            </video><img class=thumb src=images/thumbs/yodenuncio.jpg></div>
+-                        <svg class=loading-spinner width=64 height=64 viewbox="0 0 64 64">
+-                            <circle cx=32 cy=32 r=20 fill=none stroke-width=6 stroke-miterlimit=10 stroke=#ccc></circle>
+-                        </svg>
+-                    </div>
+-                </div>
+-            </div>
+-        </div>
+-    </section>
+-
+-
+-</main>
+-<!-- Footer -->
+-<footer id="footer">
+-    <div class="inner">
+-        <ul class="icons">
+-            <li><a href="https://cr.linkedin.com/in/fabricio-rodriguez" class="icon fa-linkedin-square" target="_blank"><span class="label">Linked In</span></a></li>
+-            <!--<li><a href="https://www.facebook.com/fabryccyo" class="icon fa-facebook-square" target="_blank"><span class="label">Facebook</span></a></li>-->
+-            <li><a href="https://github.com/fabriciorod" class="icon fa-code-fork" target="_blank"><span class="label">Repositories</span></a></li>
+-            <li><a href="mailto:rodriguezomarf@gmail.com" class="icon fa-envelope-o" target="_blank"><span class="label">Email</span></a></li>
+-        </ul>
+-        <ul class="address">
+-            <li class="icon fa-map-marker">&nbsp;&nbsp;Alajuela, Costa Rica.</li>
+-        </ul>
+-    </div>
+-</footer>
+-
+-<!-- Scripts -->
+-<script src="assets/js/jquery.min.js"></script>
+-<script src="assets/js/skel.min.js"></script>
+-<script src="assets/js/util.js"></script>
+-<script src="assets/lib/fastclick/lib/fastclick.js"></script>
+-<script src="assets/lib/hammerjs/hammer.min.js"></script>
+-<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+-<script src="assets/js/main.js"></script>
+-<script src="assets/js/video.js"></script>
+-</body>
++<!DOCTYPE HTML>
++<html xmlns="http://www.w3.org/1999/html">
++<head>
++    <title>Fabricio Rodríguez</title>
++    <meta charset="utf-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1" />
++    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
++    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
++    <link rel="stylesheet" href="assets/css/main.css" />
++    <link rel="stylesheet" href="assets/css/video.css" />
++    <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,900|Roboto+Mono:400,700">
++    <link rel=stylesheet href="https://fonts.googleapis.com/icon?family=Material+Icons">
++    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
++    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
++</head>
++<body id="top">
++
++<!--Header -->
++<header id="header">
++    <div class="inner">
++        <a href="#" class="image avatar"><img src="images/avatar.jpg" alt="Fabricio Rodriguez" /></a>
++        <h2><strong>Fabricio Rodríguez</strong><br></h2>
++        <h3>iOS Developer</h3>
++        <ul class="address">
++            <li><a href="#about-section">About Me</a></li>
++            <li><a href="#projects-section">Projects</a></li>
++        </ul>
++    </div>
++</header>
++<main id="main">
++    <section id="about-section">
++        <header class="major">
++            <h2>About Me</h2>
++        </header>
++        <p >Hi, I'm Fabricio Rodríguez, an iOS developer based in Costa Rica. When I'm not programming, I enjoy spending time with my family and friends, drinking coffee, talking about music, reading, and learning new programming techniques.
++        </p>
++        <header>
++            <h4>Outside of work</h4>
++        </header>
++        <div class="l-container">
++            <div>
++                <h4>Reading</h4>
++                <div class="b-game-card">
++
++                    <div class="b-game-card__cover" style="background-image: url(assets/images/managers_path.jpeg);"></div>
++                </div>
++                <h5 class="card-title">The Manager's path</h5>
++                <p class="card-subtitle">Camille Fournier</p>
++            </div>
++            <div>
++                <h4>Listening</h4>
++                <div class="b-game-card">
++                    <div class="b-game-card__cover" style="background-image: url(assets/images/inthelandofgreyandpink.jpg);"></div>
++                </div>
++                <h5 class="card-title">In the land of Grey and Pink</h5>
++                <p class="card-subtitle">Caravan</p>
++            </div>
++            <div>
++                <h4>Watching</h4>
++                <div class="b-game-card">
++                    <div class="b-game-card__cover" style="background-image: url(assets/images/chimpempire.jpeg);"></div>
++                </div>
++                <h5 class="card-title">Chimp Empire</h5>
++                <p class="card-subtitle">Netflix</p>
++            </div>
++            <div>
++                <h4>Learning</h4>
++                <div class="b-game-card">
++                    <div class="b-game-card__cover" style="background-image: url(assets/images/visionos.jpg);"></div>
++                </div>
++                <h5 class="card-title">visionOS</h5>
++                <p class="card-subtitle">Apple</p>
++            </div>
++        </div>
++    </section>
++    <section id="projects-section" >
++        <header class="major">
++            <h2>
++                Recent Projects
++            </h2>
++        </header>
++        <p>When I started programming, I never imagined that it would lead me to work on such interesting projects in so many different areas, the knowledge and experience I've gained working with very intelligent people is invaluable, they have impacted my life in a very positive way and it is something I’ll always be grateful for.<br>
++            This is a small list of projects in which I have loved to participate, because if you love what you do, you'll never have to work again.</p>
++        <div>
++            <header>
++                <h3>Gaia</h3>
++                <p>iOS/tvOS Engineer</p>
++            </header>
++            <p>I initially contributed to this project by defining the guidelines for developers and documenting the conventions for writing code and creating unit tests. We knew that much of the code would be reused in the tvOS application, so we defined an MVVM architecture that allowed us to reuse the ViewModel classes by both iOS and tvOS. This allowed us to avoid code duplication and accelerate the project.<br><br>
++                I have a special place in my heart for this project. Initially, there was no Scrum structure, so we created the initial working agreements and the process to follow.
++                Over the course of several years, we continuously improved our working method to the point where it became a well-oiled machine that worked very effectively and with little friction. This was one of the project's greatest achievements.
++            </p>
++            <div class="row">
++                <div class="col-6">
++                    <h4>Responsibilities</h4>
++                    <ul>
++                        <li>Develop features and corresponding unit tests.</li>
++                        <li>Jenkins jobs maintenance and configuration.</li>
++                        <li>Work with third-party library vendors.</li>
++                        <li>Certificates and provisioning profiles maintenance<br>and configuration.</li>
++                        <li>Crash detection, analysis and fix.</li>
++                    </ul>
++                </div>
++                <div class="col-6">
++                    <h4>Tech</h4>
++                    <ul>
++                        <li>iOS, tvOS, watchOS</li>
++                        <li>HLS</li>
++                        <li>Jenkins</li>
++                        <li>Apple TV integration</li>
++                        <li>A/B Testing</li>
++                        <li>In-app purchases</li>
++                        <li>MVVM</li>
++                    </ul>
++                </div>
++            </div>
++            <div class="row">
++                <div class="col-6 col-12-small">
++                    <ul class="actions">
++                        <li><a href="https://www.gaia.com/" target="_blank" class="button primary icon solid fa-external-link">Website</a></li>
++                        <li><a href="https://itunes.apple.com/us/app/gaia-conscious-yoga-meditation-and-spirituality/id821068605?mt=8" target="_blank" class="button icon solid fa-apple">App</a></li>
++                    </ul>
++                </div>
++            </div>
++        </div>
++        <div>
++            <header>
++                <h3>Inspirato</h3>
++                <p>SDET(Software Development Engineer in Test)</p>
++            </header>
++            <p>I am not afraid of change, and this was one of those cases where I got to do something different because my experience matched perfectly the job description and I wanted to have a different role than usual.<br><br>
++                The goal of the project was to automate the manual regression test suite using XCTest. I was given the task of starting the automation suite from scratch.
++                I faced a few challenges along the way, but I was able to overcome them and successfully automate the test suite. I am proud of the work I did on this project, and I am grateful for the opportunity to have taken on a new challenge.
++            </p>
++            <div class="row">
++                <div class="col-6">
++                    <h4>Responsibilities</h4>
++                    <ul>
++                        <li>Test case definition and programming.</li>
++                        <li>Create and maintain test plans in Xcode and Jira.&nbsp</li>
++                        <li>Create and maintain workflows in Bitrise.</li>
++                        <li>Test execution automation with Xray.</li>
++                        <li>Manual testing.</li>
++                    </ul>
++                </div>
++                <div class="col-6">
++                    <h4>Tech</h4>
++                    <ul>
++                        <li>XCTest</li>
++                        <li>Bitrise</li>
++                        <li>Gherkin</li>
++                        <li>Xray</li>
++                    </ul>
++                </div>
++            </div>
++            <div class="row">
++                <div class="col-6 col-12-small">
++                    <ul class="actions">
++                        <li><a href="https://www.inspirato.com" target="_blank" class="button primary icon solid fa-external-link">Website</a></li>
++                        <li><a href="https://apps.apple.com/us/app/inspirato/id970207197" target="_blank" class="button icon solid fa-apple">App</a></li>
++                    </ul>
++                </div>
++            </div>
++        </div>
++        <div>
++            <header>
++                <h3>Greenlight</h3>
++                <p>iOS Engineer</p>
++            </header>
++            <p>Greenlight is a company on a mission to help parents raise financially smart kids. They serve more than 6 million parents and kids with a banking app for families.<br><br>
++                One of the most impressive aspects of this project was the large number of engineers working on the same application at the same time. Each team was responsible for a specific feature, and my team was responsible for adding credit card features. Thanks to the team's hard work, users can now apply for a credit card from the application and receive it in the comfort of their own homes.
++            </p>
++            <div class="row">
++                <div class="col-6">
++                    <h4>Responsibilities</h4>
++                    <ul>
++                        <li>Ensure performance, code quality, testing, and<br>stability of the application.</li>
++                        <li>Collaborate with the engineering team to build new<br> features at scale.</li>
++                        <li>Provide guidance on Apple’s design principles,<br>technology trends, and user interface guidelines <br> through collaboration with the design team.</li>
++                        <li>Design and develop mobile SDK frameworks or<br> common libraries.</li>
++                        <li>On-Call support.</li>
++                    </ul>
++                </div>
++                <div class="col-6">
++                    <h4>Tech</h4>
++                    <ul>
++                        <li>A/B Testing</li>
++                        <li>Bitrise</li>
++                        <li>PromiseKit</li>
++                        <li>Quick</li>
++                        <li>Nimble</li>
++                        <li>Deep Linking</li>
++                        <li>SSL Pinning</li>
++                        <li>MVVM-C</li>
++                        <li>Swift Package Manager/Cocoapods</li>
++                    </ul>
++                </div>
++            </div>
++            <div class="row">
++                <div class="col-6 col-12-small">
++                    <ul class="actions">
++                        <li><a href="https://greenlight.com" target="_blank" class="button primary icon solid fa-external-link">Website</a></li>
++                        <li><a href="https://greenlightme.onelink.me/vRh4/f5636726" target="_blank" class="button icon solid fa-apple">App</a></li>
++                    </ul>
++                </div>
++            </div>
++        </div>
++        <div>
++            <header>
++                <h3>Davita</h3>
++                <p>iOS Engineer</p>
++            </header>
++            <p>One of the things that I enjoy the most about my work is to create applications that have a direct impact on the lives of others. Davita is a clear example of this. Working on healthcare applications in the United States is always a challenge due to the amount of regulations. In this case, we developed user interface components for an application that was used by nurses to treat patients.<br><br>
++                The project was complex, but rewarding. We had to work closely with nurses to understand their needs and ensure that the application was easy to use and safe. We also had to meet a number of regulatory requirements.<br><br>
++                In the end, the project was a success. The application was well-received by nurses and helped to improve patient care. I am proud of the work we did and I am glad that we were able to make a difference in the lives of others.
++            </p>
++            <div class="row">
++                <div class="col-6 col-12-xsmall">
++                    <h4>Responsibilities</h4>
++                    <ul>
++                        <li>Feature development and unit test development</li>
++                        <li>Work closely with UI/UX design, product ownership,<br>back-end, and other teams.</li>
++                        <li>Assist in the resolution of complex and escalated<br> production issues. </li>
++                        <li>On call support</li>
++                        <li>Build reusable code and libraries for future use.</li>
++                        <li>Participate in code review and perform extensive<br>testing to ensure high quality software.</li>
++                    </ul>
++                </div>
++                <div class="col-6 col-12-xsmall">
++                    <h4>Tech</h4>
++                    <ul>
++                        <li>VIPER architecture</li>
++                        <li>Realm/Realm Object Server</li>
++                        <li>RxSwift/RxRealm</li>
++                        <li>Carthage</li>
++                        <li>Groovy</li>
++                    </ul>
++                </div>
++            </div>
++            <div class="row">
++                <div class="col-6 col-12-small">
++                    <ul class="actions">
++                        <li><a href="https://www.davita.com/" target="_blank" class="button primary icon solid fa-external-link">Website</a></li>
++                    </ul>
++                </div>
++            </div>
++        </div>
++        <div>
++            <header>
++                <h3>The Sonar Company</h3>
++                <p>iOS Engineer</p>
++            </header>
++            <p>The Sonar Company is a startup founded in Costa Rica in early 2016. The company proposes a data transmission model using sound waves and was selected to participate in the Comcast NBCUniversal’s SportsTech Accelerator program.<br><br>
++                The idea behind the development was to create an application that could detect ultrasonic sounds (inaudible to humans) and transmit data through them. This data could then be converted to different formats, making it potentially useful for television. Users could receive links through the audio emitted by the television, regardless of the content that was being shown.<br><br>
++                After experiencing setbacks, I was hired to complete the development of the app because the company hired to develop the app was unable to deliver the desired results. My contribution led to successful tests on television, which resulted in the sale of the company and the transfer of operations to the United States. I was unable to continue with the project, but it was a complex and enriching experience that I am grateful for.
++            </p>
++            <div class="row">
++                <div class="col-6 col-12-xsmall">
++                    <h4>Responsibilities</h4>
++                    <ul>
++                        <li>Lead the development and maintenance of the iOS<br> application, ensuring they meet high standards of <br>quality, performance, and usability.</li>
++                        <li>Participate in the entire software development <br>lifecycle, including design, coding, testing,<br> and deployment.</li>
++                        <li>Continuously discover, evaluate, and implement new<br>technologies to maximize development efficiency.</li>
++                        <li>Create mock-ups and prototypes to express ideas <br>and gather feedback.</li>
++                    </ul>
++                </div>
++                <div class="col-6 col-12-xsmall">
++                    <h4>Tech</h4>
++                    <ul>
++                        <li>AVAudioEngine</li>
++                        <li>Push Notifications</li>
++                        <li>Firebase</li>
++                        <li>Facebook Login</li>
++                        <li>Google Sign-In</li>
++                        <li>Google Mobile Ads</li>
++                        <li>MVVM-C</li>
++                        <li>Cocoapods</li>
++                    </ul>
++                </div>
++            </div>
++            <div class="row">
++                <div class="col-6 col-12-small">
++                    <ul class="actions">
++                        <li><a href="https://www.crunchbase.com/organization/sports-sonar" target="_blank" class="button primary icon solid fa-external-link">More Info</a></li>
++                    </ul>
++                </div>
++            </div>
++        </div>
++
++
++    </section>
++</main>
++<!-- Footer -->
++<footer id="footer">
++    <div class="inner">
++        <ul class="icons">
++            <li><a href="assets/files/Resume_Fabricio_Rodriguez.pdf" class="icon fa-file-text" target="_blank"><span class="label">Resume</span></a></li>
++            <li><a href="https://cr.linkedin.com/in/fabricio-rodriguez" class="icon fa-linkedin-square" target="_blank"><span class="label">Linked In</span></a></li>
++            <li><a href="https://github.com/fabriciorod" class="icon fa-code-fork" target="_blank"><span class="label">Repositories</span></a></li>
++            <li><a href="mailto:rodriguezomarf@gmail.com" class="icon fa-envelope-o" target="_blank"><span class="label">Email</span></a></li>
++        </ul>
++        <ul class="address">
++            <li class="icon fa-map-marker">&nbsp;&nbsp;San José, Costa Rica.</li>
++        </ul>
++    </div>
++</footer>
++
++<!-- Scripts -->
++<script src="assets/js/jquery.min.js"></script>
++<script src="assets/js/skel.min.js"></script>
++<script src="assets/js/util.js"></script>
++<script src="assets/lib/fastclick/lib/fastclick.js"></script>
++<script src="assets/lib/hammerjs/hammer.min.js"></script>
++<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
++<script src="assets/js/main.js"></script>
++<script src="assets/js/video.js"></script>
++</body>
+ </html>
+\ No newline at end of file

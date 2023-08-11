@@ -9,7 +9,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
+
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -1656,7 +1658,7 @@ hr {
 }
 
 hr.major {
-	margin: 3em 0;
+	margin: 2em 0;
 }
 
 blockquote {
@@ -2517,6 +2519,32 @@ input[type="button"]:disabled,
 	width: 6.25em;
 }
 
+#header .address {
+	color: rgba(255, 255, 255, 0.4);
+	font-size: 0.8em;
+	list-style: none;
+	margin: 1em 0 0 0;
+	padding: 0;
+}
+
+#header .address li {
+	border-left: solid 1px rgba(255, 255, 255, 0.25);
+	display: inline-block;
+	line-height: 1em;
+	margin-left: 0.75em;
+	padding-left: 0.75em;
+}
+
+#header .address li:first-child {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#header .address li a {
+	color: inherit;
+}
+
 /* Footer */
 
 #footer .icons {
@@ -2526,6 +2554,7 @@ input[type="button"]:disabled,
 #footer .icons a {
 	color: rgba(255, 255, 255, 0.4);
 }
+
 
 #footer .address {
 	color: rgba(255, 255, 255, 0.4);
@@ -2558,7 +2587,7 @@ input[type="button"]:disabled,
 #main {
 	margin-left: 25%;
 	max-width: 82em;
-	padding: 8em 4em 4em 4em;
+	padding: 2em 4em 4em 4em;
 	width: calc(100% - 25%);
 }
 
@@ -2567,11 +2596,17 @@ input[type="button"]:disabled,
 	padding: 2em 0 0 0;
 }
 
-#main > section:first-child {
+#main > section {
     border-bottom: solid 2px #efefef;
-	margin-top: 0;
+	margin-top: 40px;
 	padding-top: 0;
 }
+
+/*#main > section:last-child {*/
+/*	border-bottom: solid 2px #efefef;*/
+/*	margin-top: 0;*/
+/*	padding-top: 0;*/
+/*}*/
 
 /* Poptrox */
 
@@ -2690,6 +2725,14 @@ body.is-touch .poptrox-popup .closer {
 		display: none;
 	}
 
+	#header .copyright li {
+		border-left-width: 0;
+		display: block;
+		line-height: 2.25em;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
 	/* Footer */
 
 	#footer .copyright li {
@@ -2748,6 +2791,18 @@ body.is-touch .poptrox-popup .closer {
 
 	#header h1 br {
 		display: inline;
+	}
+
+	#header .copyright {
+		margin: 0 0 1em 0;
+	}
+
+	#header .copyright li {
+		border-left-width: 1px;
+		display: inline-block;
+		line-height: 1em;
+		margin-left: 0.75em;
+		padding-left: 0.75em;
 	}
 
 	/* Footer */
@@ -2919,6 +2974,14 @@ body.is-touch .poptrox-popup .closer {
 		display: none;
 	}
 
+	#header .copyright li {
+		border-left-width: 0;
+		display: block;
+		line-height: 2.25em;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
 	/* Footer */
 
 	#footer .copyright li {
@@ -2928,5 +2991,94 @@ body.is-touch .poptrox-popup .closer {
 		margin-left: 0;
 		padding-left: 0;
 	}
-
 }
+
+
+.l-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	width: 100%;
+	max-width: 1100px;
+	margin-bottom: 30px;
+}
+
+.card-title {
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+.card-subtitle {
+	margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+	.l-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.b-game-card {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	padding-bottom: 120%;
+	perspective: 1000px;
+}
+.b-game-card__cover {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+	background-size: cover;
+	perspective-origin: 50% 50%;
+	transform-style: preserve-3d;
+	transform-origin: top center;
+	will-change: transform;
+	transform: skewX(0.001deg);
+	transition: transform 0.35s ease-in-out;
+}
+.b-game-card__cover::after {
+	display: block;
+	content: "";
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 120%;
+	background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+	transform: translateY(-20%);
+	will-change: transform;
+	transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+.b-game-card:hover .b-game-card__cover {
+	transform: rotateX(7deg) translateY(-6px);
+}
+.b-game-card:hover .b-game-card__cover::after {
+	transform: translateY(0%);
+}
+.b-game-card::before {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	background: rgba(0, 0, 0, 0.5);
+	box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+	will-change: opacity;
+	transform-origin: top center;
+	transform: skewX(0.001deg);
+	transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+}
+.b-game-card:hover::before {
+	opacity: 0.6;
+	transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+
